@@ -5,7 +5,7 @@
     "content_scripts": [ {
        "all_frames": true,
        "css": [  ],
-       "js": [ "src/filling/fill.js" ],
+       "js": [ "src/filling/fill.js", "./src/popup.js" ],
        "match_about_blank": true,
        "matches": [ "*://gs.nike.com/*", "*://gs-payments.nike.com/*" ],
        "run_at": "document_start"
