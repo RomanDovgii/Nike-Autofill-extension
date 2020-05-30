@@ -1,0 +1,142 @@
+<!-- 'firstName', 'middleName', 'lastName', 'addressLine1',
+    'addressLine2', 'city', 'region', 'postCode', 'phone', 'email',             //continue
+    'passport Number', 'passport Issue Date', 'issuing Authority', 'innNumber',     //continue
+    'cardNumber-input', 'cardExpiry-input', 'cardCvc-input'                   -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <h3>Nike autofill Gaspromov & Cactus-web & Stress Notify</h3>
+
+    <form action="">
+
+        <div class="tab">
+            
+            <h5>Отправка</h5>
+
+            <div>
+                <label for="firstName">Имя:</label><br>
+                <input type="text" id="firstName" pattern="^[A-Za-zА-Яа-яЁё]+$" required>
+                
+            </div>
+    
+            <div>
+                <label for="lastName">Фамилия:</label><br>
+                <input type="text" id="lastName" pattern="^[A-Za-zА-Яа-яЁё]+$" required>
+
+            </div>
+            
+            <div>
+                <label for="lastName">Отчество:</label><br>
+                <input type="text" id="lastName" pattern="^[A-Za-zА-Яа-яЁё]+$" required>
+
+            </div>
+    
+            <div>
+
+                <label for="addressLine1">Адрес 1:</label><br>
+                <input type="text" id="addressLine1" required>
+            </div>
+    
+            <div>
+
+                <label for="addressLine2">Адрес 2(необязательно):</label><br>
+                <input type="text" id="addressLine2">
+            </div>
+    
+            <div>
+                <label for="city">Город:</label><br>
+                <input type="text" id="city" pattern="^[A-Za-zА-Яа-яЁё]+$" required>
+
+            </div>
+    
+            <div>
+                <label for="region">Регион:</label><br>
+                <input type="text" id="region" required>
+
+            </div>
+    
+            <div>
+                <label for="postCode">Индекс:</label><br>
+                <input type="text" id="postCode" pattern="^[0-9]+$" required>
+                
+            </div>
+
+
+            <div>
+                <label for="phone">Телефон:</label><br>
+                <input type="text" id="phone" pattern="^[0-9]+$" required>
+
+            </div>
+
+            <div>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" required>
+
+            </div>
+    
+
+        </div>
+
+        <div class="tab">
+            <h5>Удостоверение личности</h5>
+            
+            <label for="passpornNumber">Номер и серия пасспорта(без пробелов):</label><br>
+            <input type="text" id="passpornNumber" pattern="[0-9]{10}" required>
+    
+            <label for="passportIssueDate">Дата получения:</label><br>
+            <input type="text" id="passportIssueDate"  required>
+    
+            <label for="issuingAuthority">Место выдачи:</label><br>
+            <input type="text" id="issuingAuthority" required>
+    
+            <label for="innNumber">Инн:</label><br>
+            <input type="text" id="innNumber" required>
+    
+
+        </div>
+        
+        <div class="tab">
+
+            <h5>Банковская карта</h5>
+            
+            <div class="card">
+                <div>
+    
+                    <label for="cardNumber">Номер карты:</label><br>
+                    <input type="text" id="cardNumber" pattern="[0-9]{16}" required>
+                </div>
+        
+                <div>
+    
+                    <label for="cardExpiry">Дата истечения:</label><br>
+                    <input type="text" id="cardExpiry" required>
+                </div>
+    
+                <div>
+    
+                    <label for="cardCvc">CVC:</label><br>
+                    <input type="text" id="cardCvc" pattern="[0-9]{3}" required>
+                </div>
+                
+            </div>
+
+        </div>
+
+
+        <div style="overflow:auto;">
+            <div style="float:right;">
+              <button type="button" id="prevBtn" onclick="nextPrev(-1)">Back</button>
+              <button type="button" id="nextBtn" onclick="nextPrev(1)">Continue</button>
+            </div>
+          </div>
+
+    </form>
+<script src="popup.js"></script>
+<script></script>
+</body>

@@ -1,0 +1,21 @@
+{
+    "browser_action": {
+       "default_popup": "src/popup.html"
+    },
+    "content_scripts": [ {
+       "all_frames": true,
+       "css": [  ],
+       "js": [ "src/filling/fill.js" ],
+       "match_about_blank": true,
+       "matches": [ "*://gs.nike.com/*", "*://gs-payments.nike.com/*" ],
+       "run_at": "document_start"
+    }],
+    "description": "Autofill for Nike. He fills out all the necessary fields on the Nike checkout.",
+    "manifest_version": 2,
+    "name": "Nike Autofill by Gaspromov & Cactus-web",
+    "permissions": [ "storage", "tabs" ],
+    "version": "1.0.1",
+    "version_name": "beta for Stress Notify",
+    "author": "Gaspromov&Cactus-web"
+ }
+ 

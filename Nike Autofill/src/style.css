@@ -1,0 +1,44 @@
+html{
+    width: 200px;
+}
+h5, h3{
+    text-align: center;
+}
+
+input{
+    /* border-radius: 5px; */
+}
+
+
+
+  /* Mark input boxes that gets an error on validation: */
+  input.invalid {
+    background-color: #ffdddd;
+  }
+
+  input{
+      border-color: rgb(9, 83, 151);
+      border: 0px;
+      border-bottom:1px solid rgb(9, 83, 151);
+      margin-bottom: 10px;
+  }
+  
+  /* Hide all steps by default: */
+  .tab {
+    display: none;
+  }
+
+  /* .card{
+      display: grid;
+      grid-template-columns: 4fr 1fr 1fr;
+  }
+
+  input#cardExpiry, input#cardCvc{
+      width: 100px;
+  }
+   */
+  
+  /* Mark the steps that are finished and valid: */
+  .step.finish {
+    background-color: #4CAF50;
+  }
